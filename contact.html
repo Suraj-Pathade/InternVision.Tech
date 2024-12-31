@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>InternVision Tech - IT Solutions Website Template</title>
+        <title>InternVision Tech</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
@@ -157,23 +157,26 @@
                         </div>
                         <div class="col-lg-6 wow fadeIn" data-wow-delay=".5s">
                             <div class="p-5 rounded contact-form">
-                                <div class="mb-4">
-                                    <input type="text" class="form-control border-0 py-3" placeholder="Your Name">
-                                </div>
-                                <div class="mb-4">
-                                    <input type="email" class="form-control border-0 py-3" placeholder="Your Email">
-                                </div>
-                                <div class="mb-4">
-                                    <input type="text" class="form-control border-0 py-3" placeholder="Project">
-                                </div>
-                                <div class="mb-4">
-                                    <textarea class="w-100 form-control border-0 py-3" rows="6" cols="10" placeholder="Message"></textarea>
-                                </div>
-                                <div class="text-start">
-                                    <button class="btn bg-primary text-white py-3 px-5" type="button">Send Message</button>
-                                </div>
+                                <form action="/submit" method="POST" name="google-sheet">
+                                    <div class="mb-4">
+                                        <input type="text" name="name" class="form-control border-0 py-3" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="mb-4">
+                                        <input type="email" name="email" class="form-control border-0 py-3" placeholder="Your Email" required>
+                                    </div>
+                                    <div class="mb-4">
+                                        <input type="text" name="project" class="form-control border-0 py-3" placeholder="Project" required>
+                                    </div>
+                                    <div class="mb-4">
+                                        <textarea name="message" class="w-100 form-control border-0 py-3" rows="6" cols="10" placeholder="Message" required></textarea>
+                                    </div>
+                                    <div class="text-start">
+                                        <button class="btn bg-primary text-white py-3 px-5" name="submit" type="submit">Send Message</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div> 
@@ -249,6 +252,17 @@
         <script src="lib/waypoints/waypoints.min.js"></script>
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwMr1896gbMiKOnu_YG-j2Og8CsHK6hOH1Ngdsr7E50ksbb0U7sEIk9pQgvaGw0TwMzxw/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
     </body>
