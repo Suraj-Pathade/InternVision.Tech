@@ -1,5 +1,21 @@
 (function ($) {
     "use strict";
+    
+    // Update the scroll indicator on scroll
+window.onscroll = function () {
+    updateScrollIndicator();
+  };
+  
+  function updateScrollIndicator() {
+    // Calculate the scroll percentage
+    const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrollPercent = (scrollTop / scrollHeight) * 100;
+  
+    // Set the width of the scroll indicator
+    document.getElementById("scrollIndicator").style.width = scrollPercent + "%";
+  }
+  
 
     // Spinner
     var spinner = function () {
