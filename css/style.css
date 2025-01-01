@@ -659,3 +659,25 @@
     transition: background-color 0.3s ease-in-out;
 }
 
+.carousel-item {
+    min-height: 100vh; /* Full-screen height */
+    background-size: cover; /* Ensure the image covers the background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10;
+    color: #fff;
+}
+
+.carousel .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 50px;
+}
