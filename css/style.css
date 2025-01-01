@@ -610,3 +610,74 @@
 }
 
 /*** Footer End ***/
+
+
+/* Ensure all images have a fixed height and maintain aspect ratio */
+.blog-item img {
+    height: 300x;
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    background-color: #f8f9fa;
+    justify-content: space-between;
+}
+
+/* Maintain consistent height for blog items */
+.blog-item {
+    min-height: 700px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect for blog-item */
+.blog-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect for image */
+.blog-item:hover img {
+    transform: scale(1.1);
+}
+
+
+/* Blog buttons */
+.blog-btn {
+    margin-top: -75px;
+    transform: scale(1.1);
+}
+
+/* Hover effect for buttons */
+.blog-btn-icon:hover {
+    background-color: #6c757d;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.carousel-item {
+    min-height: 100vh; /* Full-screen height */
+    background-size: cover; /* Ensure the image covers the background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10;
+    color: #fff;
+}
+
+.carousel .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 50px;
+}
