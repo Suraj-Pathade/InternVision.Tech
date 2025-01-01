@@ -7,6 +7,7 @@
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
+        <link rel="stylesheet" href="style.css">
 
         <link rel="shortcut icon" href="img/internvision.png" type="img/x-icon">
 
@@ -37,6 +38,7 @@
     </head>
 
     <body>
+
         <!-- Spinner Start -->
         <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-grow text-primary" role="status"></div>
@@ -813,9 +815,22 @@
         </div>
         <!-- Footer End -->
 
-
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i class="fa fa-arrow-up text-white"></i></a>
+         <!-- Chatbot Code -->
+        <div id="chatbot">
+            <div id="chatbot-header">
+              <h3>Chatbot</h3>
+              <button id="close-chatbot">X</button>
+            </div>
+            <div id="chatbot-body">
+              <div id="messages"></div>
+            </div>
+            <div id="chatbot-footer">
+              <input type="text" id="user-input" placeholder="Type your message..." />
+              <button id="send-button">Send</button>
+            </div>
+          </div>
+        
+          <button id="open-chatbot">Chat</button>
 
         
         <!-- JavaScript Libraries -->
