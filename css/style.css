@@ -1,3 +1,24 @@
+/* Scroll Indicator Container */
+#scrollIndicatorContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px; /* Adjust the height as needed */
+    background-color: #f1f1f1; /* Light gray background */
+    z-index: 1000; /* Ensure it stays on top */
+  }
+  
+  /* Scroll Indicator */
+  #scrollIndicator {
+    height: 100%;
+    width: 0; /* Start at 0 and grow dynamically */
+    background-color: #4caf50; /* Green color for the progress bar */
+    transition: width 0.25s ease; /* Smooth animation */
+  }
+  
+
+
 /*** Spinner Start ***/
 
 #spinner {
@@ -102,6 +123,28 @@
 
 
 /*** Navbar Start ***/
+        /* Adjust Social Media Icons */
+        .social-icon {
+            margin-right: 10px; /* Add spacing between icons */
+            background-color: #fff; /* Optional: Match background color */
+            padding: 10px; /* Adjust padding for consistent sizing */
+        }
+        
+        .navbar-brand {
+            margin-left: 15px; /* Add spacing between social icons and brand */
+        }
+        
+        .navbar-brand h1 {
+            font-size: 24px; /* Adjust font size for better alignment */
+            margin: 15px; /* Remove extra margins */
+        }
+        
+        /* Adjust Navbar Height */
+        .navbar {
+            align-items: center; /* Ensure vertical alignment */
+            padding: 10px 0; /* Adjust vertical padding */
+        }
+        
 .navbar .navbar-nav {
     padding: 15px 0;
 }
@@ -298,7 +341,7 @@
 }
 
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/appdevelopment.jpeg) center center no-repeat;
     background-size: cover;
 }
 
@@ -335,7 +378,7 @@
     top: 0;
     left: 0;
     border-radius: 10px 10px 0 0;
-    background: rgba(3, 43, 243, 0.8);
+    background: rgba(56, 89, 254, 0.8);
     transition: .5s;
 }
 
@@ -438,7 +481,6 @@
 
 /*** Project End ***/
 
-
 /*** Blog Start ***/
 .blog-item .blog-btn {
     z-index: 2;
@@ -455,127 +497,31 @@
     position: absolute;
     top: 6px;
     left: -140px;
-    
+    transition: transform 1s ease; /* Smooth animation using transform */
 }
 
 .blog-btn-icon:hover .blog-icon-2 {
-    transition: 1s;
-    left: 5px;
-    top: 6px;
+    transform: translateX(145px); /* Moves the icon smoothly to the right */
     padding-bottom: 5px;
 }
+
 .blog-icon-1 {
     position: relative;
     top: -4px;
+    transition: transform 1s ease; /* Smooth transition for both icons */
 }
+
 .blog-btn-icon:hover .blog-icon-1 {
-    top: 0;
-    right: -140px;
-    transition: 1s;
+    transform: translateX(140px); /* Moves the icon smoothly to the right */
 }
 
 /*** Blog End ***/
 
 
-/*** Team Start ***/
-
-.team-item {
-    border-top: 30px solid var(--bs-secondary) !important;
-    background: rgba(239, 239, 241, 0.8);
-}
-
-.team-content::before {
-    height: 200px;
-    display: block;
-    content: "";
-    position: relative;
-    top: -101px;
-    background: var(--bs-secondary);
-    clip-path: polygon(50% 50%, 100% 50%, 50% 100%, 0% 50%);
-    padding: 60px;
-    opacity: 1;
-}
-
-.team-img-icon {
-    position: relative;
-    margin-top: -200px;
-    padding: 30px;
-    padding-bottom: 0;
-}
-
-.team-img {
-    border: 15px solid var(--bs-white);
-}
-
-.team-img img {
-    border: 10px solid var(--bs-secondary);
-    transition: .5s;
-}
-
-.team-item:hover h4 {
-    color: var(--bs-primary);
-    transition: .5s;
-}
-
-.team-item:hover .team-img img {
-    transform: scale(1.05);
-    border: 10px solid var(--bs-secondary);
-}
-
-.team-carousel .owl-stage {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.team-carousel .owl-nav {
-    position: absolute;
-    top: -100px;
-    right: 50px;
-    display: flex;
-}
-
-.team-carousel .owl-nav .owl-prev,
-.team-carousel .owl-nav .owl-next {
-    width: 56px;
-    height: 56px;
-    border-radius: 56px;
-    margin-left: 15px;
-    background: var(--bs-secondary);
-    color: var(--bs-white);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: .5s;
-}
-
-.team-carousel .owl-nav .owl-prev:hover,
-.team-carousel .owl-nav .owl-next:hover {
-    background: var(--bs-primary);
-    color: var(--bs-white);
-}
-
-@media (max-width: 992px) {
-    .team-carousel {
-        margin-top: 3rem;
-    }
-
-    .team-carousel .owl-nav {
-        top: -85px;
-        left: 50%;
-        right: auto;
-        transform: translateX(-50%);
-        margin-left: -15px;
-    }
-}
-
-/*** Team End ***/
-
-
 /*** Testimonial Start ***/
 
 .testimonial-item {
-    background: #e3f0eb;
+    background: #ccf9e7;
 
 }
 
@@ -623,7 +569,7 @@
 .contact-detail::before {
     position: absolute;
     content: "";
-    height: 50%;
+    height: 100%;
     width: 100%;
     top: 0;
     left: 0;
@@ -634,11 +580,11 @@
 }
 
 .contact-map {
-    background: #26d48c;
+    background: #68febf;
 }
 
 .contact-form {
-    background: #26d48c;
+    background: #68febf;
 }
 
 /*** Contact End ***/
@@ -655,7 +601,7 @@
 .footer .short-link a:hover,
 .footer .help-link a:hover,
 .footer .contact-link a:hover {
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 .footer .hightech-link a:hover {
@@ -664,3 +610,74 @@
 }
 
 /*** Footer End ***/
+
+
+/* Ensure all images have a fixed height and maintain aspect ratio */
+.blog-item img {
+    height: 300x;
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    background-color: #f8f9fa;
+    justify-content: space-between;
+}
+
+/* Maintain consistent height for blog items */
+.blog-item {
+    min-height: 700px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect for blog-item */
+.blog-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect for image */
+.blog-item:hover img {
+    transform: scale(1.1);
+}
+
+
+/* Blog buttons */
+.blog-btn {
+    margin-top: -75px;
+    transform: scale(1.1);
+}
+
+/* Hover effect for buttons */
+.blog-btn-icon:hover {
+    background-color: #6c757d;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.carousel-item {
+    min-height: 100vh; /* Full-screen height */
+    background-size: cover; /* Ensure the image covers the background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10;
+    color: #fff;
+}
+
+.carousel .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 50px;
+}

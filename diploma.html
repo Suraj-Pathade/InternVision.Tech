@@ -41,7 +41,6 @@
         </div>
         <!-- Spinner End -->
 
-   
         <!-- Navbar Start -->
         <div class="container-fluid bg-primary">
             <div class="container">
@@ -99,12 +98,12 @@
         <!-- Page Header Start -->
         <div class="container-fluid page-header py-5">
             <div class="container text-center py-5">
-                <h1 class="display-2 text-white mb-4 animated slideInDown">Contact Us</h1>
+                <h1 class="display-2 text-white mb-4 animated slideInDown">Diploma Courses</h1>
                 <nav aria-label="breadcrumb animated slideInDown">
                     <ol class="breadcrumb justify-content-center mb-0">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item"><a href="project.html">Project</a></li>
-                        <li class="breadcrumb-item" aria-current="page">Contact</li>
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                        <li class="breadcrumb-item" aria-current="page">Diploma</li>
                     </ol>
                 </nav>
             </div>
@@ -112,83 +111,145 @@
         <!-- Page Header End -->
 
 
-        <!-- Contact Start -->
-        <div class="container-fluid py-5 mt-5">
-            <div class="container py-5">
-                <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                    <h5 class="text-primary">Get In Touch</h5>
-                    <h1 class="mb-3">Contact for any query</h1>
-                </div>
-                <div class="contact-detail position-relative p-5">
-                    <div class="row g-5 mb-5 justify-content-center">
-                        <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".3s">
-                            <div class="d-flex bg-light p-3 rounded">
-                                <div class="flex-shrink-0 btn-square bg-secondary rounded-circle" style="width: 64px; height: 64px;">
-                                    <i class="fas fa-map-marker-alt text-white"></i>
-                                </div>
-                                <div class="ms-3">
-                                    <h4 class="text-primary">Address</h4>
-                                    <a href="https://goo.gl/maps/Zd4BCynmTb98ivUJ6" target="_blank" class="h5"> New Mumbai, INDIA</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".5s">
-                            <div class="d-flex bg-light p-3 rounded">
-                                <div class="flex-shrink-0 btn-square bg-secondary rounded-circle" style="width: 64px; height: 64px;">
-                                    <i class="fa fa-phone text-white"></i>
-                                </div>
-                                <div class="ms-3">
-                                    <h4 class="text-primary">Call Us</h4>
-                                    <a class="h5" href="tel:+0123456789" target="_blank">+91 9518500778</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".7s">
-                            <div class="d-flex bg-light p-3 rounded">
-                                <div class="flex-shrink-0 btn-square bg-secondary rounded-circle" style="width: 64px; height: 64px;">
-                                    <i class="fa fa-envelope text-white"></i>
-                                </div>
-                                <div class="ms-3">
-                                    <h4 class="text-primary">Email Us</h4>
-                                    <a class="h5" href="mailto:internvisiontech1@gmail.com" target="_blank">internvisiontech2@gmail.com</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row g-5">
-                        
-                        <div class="col-lg-6 wow fadeIn" data-wow-delay=".5s">
-                            <div class="p-5 rounded contact-form">
-                                <form action="/submit" method="POST" name="google-sheet">
-                                    <div class="mb-4">
-                                        <input type="text" name="name" class="form-control border-0 py-3" placeholder="Your Name" required>
-                                    </div>
-                                    <div class="mb-4">
-                                        <input type="email" name="email" class="form-control border-0 py-3" placeholder="Your Email" required>
-                                    </div>
-                                    <div class="mb-4">
-                                        <input type="text" name="project" class="form-control border-0 py-3" placeholder="Project" required>
-                                    </div>
-                                    <div class="mb-4">
-                                        <textarea name="message" class="w-100 form-control border-0 py-3" rows="6" cols="10" placeholder="Message" required></textarea>
-                                    </div>
-                                    <div class="text-start">
-                                        <button class="btn bg-primary text-white py-3 px-5" name="submit" type="submit" onclick="clearForm()">Send Message</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 wow fadeIn" data-wow-delay=".3s">
-                            <div class="p-5 h-100 rounded contact-map">
-                                <iframe class="rounded w-100 h-100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
-                        </div>
+  <!-- Diploma Courses Section Start -->
+<div class="container-fluid diploma-courses py-5 my-5">
+    <style>
+        .course-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
 
+        .course-card:hover {
+            transform: scale(1.05);
+        }
+
+        .course-card img {
+            max-height: 200px;
+            object-fit: cover;
+        }
+
+        .course-card-body {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .course-price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .feature-list {
+            font-size: 0.9rem;
+            color: #6c757d;
+            margin: 10px 0;
+        }
+
+        .btn-buy {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .btn-buy:hover {
+            background-color: #218838;
+        }
+    </style>
+    <div class="container">
+        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+            <h5 class="text-primary">Diploma Courses</h5>
+            <h1>Start Learning with Premium Content</h1>
+        </div>
+        <div class="row g-4">
+            <!-- Course 1: Web Development -->
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                <div class="card course-card">
+                    <img src="img/webdevelopment.jpeg" alt="Web Development Diploma">
+                    <div class="course-card-body">
+                        <h5 class="card-title">Diploma in Web Development</h5>
+                        <p class="course-price">$199</p>
+                        <p class="feature-list">Includes: Notes, Assignments, Question Papers, Theory Books, MCQ Books</p>
+                        <a href="coursevideo.html" class="btn btn-buy btn-block">Buy the Course</a>
                     </div>
                 </div>
-            </div> 
+            </div>
+            <!-- Course 2: Cyber Security -->
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                <div class="card course-card">
+                    <img src="img/cybersecurity.jpeg" alt="Cyber Security Diploma">
+                    <div class="course-card-body">
+                        <h5 class="card-title">Diploma in Cyber Security</h5>
+                        <p class="course-price">$249</p>
+                        <p class="feature-list">Includes: Notes, Assignments, Question Papers, Theory Books, MCQ Books</p>
+                        <a href="payment.html" class="btn btn-buy btn-block">Buy the Course</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Course 3: Web Security -->
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                <div class="card course-card">
+                    <img src="img/websecurity.jpeg" alt="Web Security Diploma">
+                    <div class="course-card-body">
+                        <h5 class="card-title">Diploma in Web Security</h5>
+                        <p class="course-price">$229</p>
+                        <p class="feature-list">Includes: Notes, Assignments, Question Papers, Theory Books, MCQ Books</p>
+                        <a href="payment.html" class="btn btn-buy btn-block">Buy the Course</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Course 4: Cloud Computing -->
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                <div class="card course-card">
+                    <img src="img/cloudcomputing.jpeg" alt="Cloud Computing Diploma">
+                    <div class="course-card-body">
+                        <h5 class="card-title">Diploma in Cloud Computing</h5>
+                        <p class="course-price">$279</p>
+                        <p class="feature-list">Includes: Notes, Assignments, Question Papers, Theory Books, MCQ Books</p>
+                        <a href="payment.html" class="btn btn-buy btn-block">Buy the Course</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Course 5: Data Science -->
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                <div class="card course-card">
+                    <img src="img/datascience.jpg" alt="Data Science Diploma">
+                    <div class="course-card-body">
+                        <h5 class="card-title">Diploma in Data Science</h5>
+                        <p class="course-price">$299</p>
+                        <p class="feature-list">Includes: Notes, Assignments, Question Papers, Theory Books, MCQ Books</p>
+                        <a href="payment.html" class="btn btn-buy btn-block">Buy the Course</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Course 6: Android Development -->
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                <div class="card course-card">
+                    <img src="img/appdevelopment.jpeg" alt="Android Development Diploma">
+                    <div class="course-card-body">
+                        <h5 class="card-title">Diploma in Android Development</h5>
+                        <p class="course-price">$249</p>
+                        <p class="feature-list">Includes: Notes, Assignments, Question Papers, Theory Books, MCQ Books</p>
+                        <a href="payment.html" class="btn btn-buy btn-block">Buy the Course</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- Contact End -->
+    </div>
+</div>
+<!-- Diploma Courses Section End -->
+
+
+
 
 
        <!-- Footer Start -->
@@ -261,24 +322,6 @@
         <script src="lib/waypoints/waypoints.min.js"></script>
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-        <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbwMr1896gbMiKOnu_YG-j2Og8CsHK6hOH1Ngdsr7E50ksbb0U7sEIk9pQgvaGw0TwMzxw/exec'
-            const form = document.forms['google-sheet']
-          
-            form.addEventListener('submit', e => {
-              e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
-                .catch(error => console.error('Error!', error.message))
-            })
-              setTimeout(() => {
-                alertBox.remove();
-            }, 3000); 
-              function clearForm() {
-        // Select the form and reset its inputs
-        document.getElementById("contactForm").reset();
-    }
-          </script>
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
     </body>
