@@ -83,28 +83,22 @@ _Showcase of website with screenshots._
 ![Screenshot of About InternVision Tech Page  ](img/assets/about.png)
 
 ### Blogs & Updates Page  
-![Screenshot of Blogs ](./assets/blogs.png")
-
-### Blogs & Updates Page  
-![Screenshot of Blogs ](./assets/blogs.png")
+![Screenshot of Blogs ](img/assets/blogs.png)
 
 ### Services Page  
-![Screenshot of Services ](./assets/services.png")
+![Screenshot of Services ](img/assets/services.png)
 
 ### Projects Page  
-![Screenshot of Projects ](./assets/projects.png")
-
-### Blogs & Updates Page  
-![Screenshot of Blogs ](./assets/blogs.png")
+![Screenshot of Projects ](img/assets/projects.png)
 
 ### Contact us Page  
-![Screenshot of Contact us ](./assets/contact.png")
+![Screenshot of Contact us ](img/assets/contact.png)
 
 ### Internships Page  
-![Screenshot of Internships ](./assets/internships.png")
+![Screenshot of Internships ](img/assets/internships.png)
 
 ### Footer Page  
-![Screenshot of Footer ](./assets/footer.png")
+![Screenshot of Footer ](img/assets/footer.png)
 
 
 
