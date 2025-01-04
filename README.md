@@ -8,7 +8,9 @@ Welcome to the official repository of **InternVision Tech**'s website! This proj
 - **Landing Page**: A visually appealing and informative home page designed to captivate visitors.  
 - **CMS Integration**: Dynamic and easy-to-manage content for a seamless user experience.  
 - **UI/UX Design**: Sleek, modern, and user-centric interface and experience.  
-- **E-Commerce Functionality**: Comprehensive online store setup to drive sales.  
+- **E-Commerce Functionality**: Comprehensive online store setup to drive sales.
+- **Payment Modes**: Secure and flexible payment gateways for seamless transactions.  
+- **Chatbot Integration**: AI-powered chatbot for 24/7 customer support and engagement. 
 
 ---
 
@@ -17,8 +19,7 @@ Welcome to the official repository of **InternVision Tech**'s website! This proj
 - **Backend**: Node.js, Express.js, or any other backend technology (if applicable).  
 - **Database**: MongoDB, MySQL, or any other database solution (if applicable).  
 - **Version Control**: Git & GitHub for collaborative development.
-- **Payment Modes**: Secure and flexible payment gateways for seamless transactions.  
-- **Chatbot Integration**: AI-powered chatbot for 24/7 customer support and engagement. 
+
 
 ---
 
