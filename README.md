@@ -77,7 +77,7 @@ npm run build
 _Showcase of website with screenshots._  
 
 ### Landing Page  
-![Screenshot of Landing Page](./assets/frontend.png")
+![Screenshot of Landing Page](img/assets/frontend.png)
 
 ### About InternVision Tech Page  
 ![Screenshot of About InternVision Tech Page  ](img/assets/about.png)
