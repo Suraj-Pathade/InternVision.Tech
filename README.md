@@ -74,7 +74,40 @@ npm run build
 ---
 
 ## 🖼️ Screenshots  
-_Showcase your website with screenshots here._  
+_Showcase of website with screenshots._  
+
+### Landing Page  
+![Screenshot of Landing Page](./assets/frontend.png")
+
+### About InternVision Tech Page  
+![Screenshot of About InternVision Tech Page  ](./assets/about.png)
+
+### Blogs & Updates Page  
+![Screenshot of Blogs ](./assets/blogs.png")
+
+### Blogs & Updates Page  
+![Screenshot of Blogs ](./assets/blogs.png")
+
+### Services Page  
+![Screenshot of Services ](./assets/services.png")
+
+### Projects Page  
+![Screenshot of Projects ](./assets/projects.png")
+
+### Blogs & Updates Page  
+![Screenshot of Blogs ](./assets/blogs.png")
+
+### Contact us Page  
+![Screenshot of Contact us ](./assets/contact.png")
+
+### Internships Page  
+![Screenshot of Internships ](./assets/internships.png")
+
+### Footer Page  
+![Screenshot of Footer ](./assets/footer.png")
+
+
+
 
 ---
 
@@ -85,8 +118,8 @@ We welcome contributions! If you'd like to contribute, please fork the repositor
 
 ## 📧 Contact  
 For any queries, reach out to us at:  
-- **Email**: support@intervisiontech.com  
-- **Website**: [www.intervisiontech.com](https://www.intervisiontech.com)  
+- **Email**: intervisiontech2@gmail.com  
+- **Website**: [www.intervisiontech.com](https://suraj-pathade.github.io/InternVision.Tech/index.html)  
 
 ---
 
@@ -99,7 +132,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 If you find this project useful, please ⭐ the repository to show your support!  
 ```
 
-### Key Points:
-- Replace placeholders (e.g., `support@intervisiontech.com`) with your actual project details.
-- Add screenshots of your website in the `Screenshots` section.
-- Update the technologies and project structure to reflect your actual implementation.
