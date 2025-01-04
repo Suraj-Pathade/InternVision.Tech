@@ -80,7 +80,7 @@ _Showcase of website with screenshots._
 ![Screenshot of Landing Page](./assets/frontend.png")
 
 ### About InternVision Tech Page  
-![Screenshot of About InternVision Tech Page  ](./assets/about.png)
+![Screenshot of About InternVision Tech Page  ](img/assets/about.png)
 
 ### Blogs & Updates Page  
 ![Screenshot of Blogs ](./assets/blogs.png")
