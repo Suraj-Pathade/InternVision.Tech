@@ -681,3 +681,202 @@
     font-size: 1rem;
     border-radius: 50px;
 }
+
+/* Chatbot Container */
+#chatbot {
+    position: fixed;
+    bottom: 120px;
+    right: 120px;
+    width: 400px; /* Increased width */
+  height: 500px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0 px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Header */
+  #chatbot-header {
+    background: rgb(102,113,255);
+    background: radial-gradient(circle, rgba(102,113,255,1) 0%, rgba(30,131,250,1) 100%);
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px 20px 0 0;
+  }
+  
+  #chatbot-header h3 {
+    margin: 0;
+  }
+  
+  #close-chatbot {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Chat Body */
+  #chatbot-body {
+    background: rgb(34,127,195);
+    background: linear-gradient(0deg, rgba(34,127,195,0.8464635854341737) 0%, rgba(91,253,45,0.6867997198879552) 100%);
+    padding: 10px;
+    overflow-y: auto;
+    max-height: 300px;
+  }
+  
+  #messages {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .message {
+    padding: 8px 12px;
+    border-radius: 15px;
+    max-width: 80%;
+  }
+  
+  .user-message {
+    align-self: flex-end;
+    background-color:var(--bs-primary);
+    color: #fff;
+  }
+  
+  .bot-message {
+    align-self: flex-start;
+    background-color: #f1f1f1;
+    color: #333;
+  }
+  
+  /* Footer */
+  #chatbot-footer {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    background: #f9f9f9;
+  }
+  
+  #user-input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #send-button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #send-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Chat Button */
+  #open-chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    display: block;
+  }
+  
+/* Chatbot Container */
+#chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 350px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    height: 500px; /* Ensure consistent height */
+    overflow: hidden; /* Prevent overflow from breaking layout */
+}
+
+/* Header */
+#chatbot-header {
+    background: rgb(102, 113, 255);
+    background: radial-gradient(circle, rgba(102, 113, 255, 1) 0%, rgba(30, 131, 250, 1) 100%);
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px 20px 0 0;
+}
+
+#chatbot-header h3 {
+    margin: 0;
+}
+
+#close-chatbot {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Chat Body */
+#chatbot-body {
+    flex: 1; /* Takes up remaining space between header and footer */
+    background: rgb(34, 127, 195);
+    background: linear-gradient(0deg, rgba(34, 127, 195, 0.85) 0%, rgba(91, 253, 45, 0.7) 100%);
+    padding: 10px;
+    overflow-y: auto; /* Enables scrolling for messages */
+}
+
+#messages {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Footer */
+#chatbot-footer {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    background: #f9f9f9;
+    align-items: center; /* Centers input and button vertically */
+}
+
+#user-input {
+    flex: 1; /* Fills available space */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#send-button {
+    padding: 8px 12px;
+    margin-left: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#send-button:hover {
+    background-color: #0056b3;
+}
