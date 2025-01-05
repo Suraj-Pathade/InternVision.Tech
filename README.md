@@ -8,7 +8,9 @@ Welcome to the official repository of **InternVision Tech**'s website! This proj
 - **Landing Page**: A visually appealing and informative home page designed to captivate visitors.  
 - **CMS Integration**: Dynamic and easy-to-manage content for a seamless user experience.  
 - **UI/UX Design**: Sleek, modern, and user-centric interface and experience.  
-- **E-Commerce Functionality**: Comprehensive online store setup to drive sales.  
+- **E-Commerce Functionality**: Comprehensive online store setup to drive sales.
+- **Payment Modes**: Secure and flexible payment gateways for seamless transactions.  
+- **Chatbot Integration**: AI-powered chatbot for 24/7 customer support and engagement. 
 
 ---
 
@@ -17,8 +19,7 @@ Welcome to the official repository of **InternVision Tech**'s website! This proj
 - **Backend**: Node.js, Express.js, or any other backend technology (if applicable).  
 - **Database**: MongoDB, MySQL, or any other database solution (if applicable).  
 - **Version Control**: Git & GitHub for collaborative development.
-- **Payment Modes**: Secure and flexible payment gateways for seamless transactions.  
-- **Chatbot Integration**: AI-powered chatbot for 24/7 customer support and engagement. 
+
 
 ---
 
@@ -74,7 +75,34 @@ npm run build
 ---
 
 ## 🖼️ Screenshots  
-_Showcase your website with screenshots here._  
+_Showcase of website with screenshots._  
+
+### Landing Page  
+![Screenshot of Landing Page](img/assets/frontend.png)
+
+### About InternVision Tech Page  
+![Screenshot of About InternVision Tech Page  ](img/assets/about.png)
+
+### Blogs & Updates Page  
+![Screenshot of Blogs ](img/assets/blogs.png)
+
+### Services Page  
+![Screenshot of Services ](img/assets/services.png)
+
+### Projects Page  
+![Screenshot of Projects ](img/assets/projects.png)
+
+### Contact us Page  
+![Screenshot of Contact us ](img/assets/contact.png)
+
+### Internships Page  
+![Screenshot of Internships ](img/assets/internships.png)
+
+### Footer Page  
+![Screenshot of Footer ](img/assets/footer.png)
+
+
+
 
 ---
 
@@ -85,8 +113,8 @@ We welcome contributions! If you'd like to contribute, please fork the repositor
 
 ## 📧 Contact  
 For any queries, reach out to us at:  
-- **Email**: support@intervisiontech.com  
-- **Website**: [www.intervisiontech.com](https://www.intervisiontech.com)  
+- **Email**: intervisiontech2@gmail.com  
+- **Website**: [www.intervisiontech.com](https://suraj-pathade.github.io/InternVision.Tech/index.html)  
 
 ---
 
@@ -99,7 +127,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 If you find this project useful, please ⭐ the repository to show your support!  
 ```
 
-### Key Points:
-- Replace placeholders (e.g., `support@intervisiontech.com`) with your actual project details.
-- Add screenshots of your website in the `Screenshots` section.
-- Update the technologies and project structure to reflect your actual implementation.
