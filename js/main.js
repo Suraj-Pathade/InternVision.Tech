@@ -186,16 +186,36 @@ function scrollToBottom() {
 
 // Simple Bot Reply Logic
 function getBotReply(userMessage) {
-  const normalizedMessage = userMessage.toLowerCase();
+  const normalizedMessage = userMessage.toLowerCase().trim();
+
+  const greetings = [
+    'hello', 'hi', 'hey', 'howdy', 'greetings', 'yo', 'whatsup', 'sup',
+    'how are you', 'how are you doing', 'good morning', 'good afternoon', 'good evening'
+  ];
+
+  // Check for greeting
+  if (greetings.some(greeting => normalizedMessage.includes(greeting))) {
+    return 'Hello! 👋 How can I assist you with your project today?';
+  }
+
+  // Check for help or assistance requests
   if (
-    ['hello', 'hi', 'hey', 'howdy', 'greetings', 'yo', 'whatsup', 'sup', 'how are you', 'how are you doing'].some((greeting) =>
-      normalizedMessage.includes(greeting)
+    ['help', 'assist', 'support', 'guide', 'instruction', 'trouble', 'issue', 'problem'].some(
+      keyword => normalizedMessage.includes(keyword)
     )
   ) {
-    return 'Hi there! How can I help you today?';
-  } else if (normalizedMessage.includes('help')) {
-    return 'Sure! Let me know what you need assistance with.';
-  } else {
-    return "I'm sorry, I don't understand that. Could you rephrase?";
+    return 'Of course! Please tell me more about what you need help with—whether it\'s JavaScript, HTML, SCSS, or something else in this project.';
   }
+
+  // Check for thanks
+  if (
+    ['thanks', 'thank you', 'thx', 'appreciate'].some(
+      word => normalizedMessage.includes(word)
+    )
+  ) {
+    return 'You’re welcome! If you have any more questions, just let me know.';
+  }
+
+  // Fallback for unrecognized input
+  return 'I’m not sure I understand that yet. Could you rephrase or specify if your question is about the code, a bug, or something else?';
 }
