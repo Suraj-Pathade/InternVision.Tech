@@ -164,7 +164,6 @@ function sendMessage() {
     }, 500);
   }
 }
-
 // Add Message to Chat and Scroll Automatically
 function addMessage(text, className) {
   const messageElement = document.createElement('div');
@@ -192,10 +191,15 @@ function getBotReply(userMessage) {
     'hello', 'hi', 'hey', 'howdy', 'greetings', 'yo', 'whatsup', 'sup',
     'how are you', 'how are you doing', 'good morning', 'good afternoon', 'good evening'
   ];
+  const greetingReplies = [
+    'Hello!👋 How can I assist you with your project today?',
+    'Hey! Ready to help with your project questions.',
+    'Greetings! How can I help you today?'
+  ];
+  // Check for greeting (random greets)
+   if (greetings.some(greeting => normalizedMessage.includes(greeting))) {
+    return greetingReplies[Math.floor(Math.random() * greetingReplies.length)];
 
-  // Check for greeting
-  if (greetings.some(greeting => normalizedMessage.includes(greeting))) {
-    return 'Hello! 👋 How can I assist you with your project today?';
   }
 
   // Check for help or assistance requests
