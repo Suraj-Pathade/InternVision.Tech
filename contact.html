@@ -86,8 +86,9 @@
                             </a>
                         </div>
                         <div class="d-flex flex-column pe-4 border-end">
-                            <span class="text-white-50">Have any questions?</span>
-                            <span class="text-secondary">Call: +91 9518500778</span>
+                            <a class="text-secondary"  href="mailto:internvisiontech1@gmail.com" target="_blank">Email: internvisiontech2@gmail.com</a>
+                            <a class="text-secondary"  href="" target="_blank">Call: +91 9518500778 </a>
+        
                         </div>
                     </div>
                 </nav>
@@ -173,7 +174,7 @@
                                         <textarea name="message" class="w-100 form-control border-0 py-3" rows="6" cols="10" placeholder="Message" required></textarea>
                                     </div>
                                     <div class="text-start">
-                                        <button class="btn bg-primary text-white py-3 px-5" name="submit" type="submit">Send Message</button>
+                                        <button class="btn bg-primary text-white py-3 px-5" name="submit" type="submit" onclick="clearForm()">Send Message</button>
                                     </div>
                                 </form>
                             </div>
@@ -271,6 +272,13 @@
                 .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
                 .catch(error => console.error('Error!', error.message))
             })
+              setTimeout(() => {
+                alertBox.remove();
+            }, 3000); 
+              function clearForm() {
+        // Select the form and reset its inputs
+        document.getElementById("contactForm").reset();
+    }
           </script>
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
