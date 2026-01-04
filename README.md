@@ -119,12 +119,12 @@ For any queries, reach out to us at:
 ---
 
 ## 📜 License  
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.  
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details. 
 
 ---
 
-### 🌟 Show Your Support  
+### 🌟 Show Your Support
 If you find this project useful, please ⭐ the repository to show your support!  
 ```
 
-Thank You ☺️
+Thank You ☺️...
